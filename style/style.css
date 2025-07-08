@@ -106,6 +106,63 @@ image {
     margin: 0;
     padding: 0;
 }
+
+
+/* about container style */
+
+.about {
+    max-width: 900px;
+    background-color: antiquewhite;
+    margin: 150px auto;
+    border-radius: 10px;
+    padding: 100px 20px;
+    display: flex;
+}
+
+.about-container {
+    max-width: 600px;
+    background-color: rgb(242, 242, 242);
+    margin:  auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 40px;
+    color:#181818;
+    margin: 10px 0px;
+}
+
+.about-container p {
+    color: #757575;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0px ;
+}
+
+.about-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 10px 0px;
+}
+.about-container ul li {
+    text-align: left;
+}
+
+.about-container ul li h4:nth-child(odd)
+{
+        color: #757575;
+}
+
+.about-container ul li h4:nth-child(even)
+{
+    color: #181818;
+}
 /* universal button style */
 .btn-primary {
     background-color: #FD6E0A;
