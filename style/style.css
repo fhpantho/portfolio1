@@ -6,12 +6,17 @@
 
 /* header style */
 header {
+    height: 837px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     padding: 0px;
     background-color: #FFF8F3;
     background-image: url("../images/developer.png"), url("../images/header_bg.png");
     background-repeat: no-repeat, no-repeat;
+    background-size: auto;
     background-position: 18px 20px, right bottom;
+    overflow: hidden;
 }
 
 /* navigation style */
@@ -43,6 +48,7 @@ nav {
     color: #FD6E0A;
 }
 
+
 .navigation-button ul {
     display: flex;
     justify-content: space-between;
@@ -62,7 +68,7 @@ nav {
 /* banner section */
 .banar_container {
     display: flex;
-    padding-top: 80px; /* 100 * 0.8 */
+    padding-top: 50px; /* 100 * 0.8 */
     justify-content: space-between;
 }
 
@@ -97,9 +103,7 @@ nav {
 
 /* image untouched */
 .image img {
-    position: relative;
-
-    bottom: -5px;
+    width: 600px;
 
 }
 image {
@@ -117,6 +121,7 @@ image {
     border-radius: 10px;
     padding: 100px 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-container {
@@ -157,11 +162,82 @@ image {
 .about-container ul li h4:nth-child(odd)
 {
         color: #757575;
+        font-size: 14px;
 }
 
 .about-container ul li h4:nth-child(even)
 {
     color: #181818;
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+
+/* work container */
+
+.work-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.work-container h2 {
+    color: #181818;
+    font-size: 35px;
+    margin-bottom: 30px;margin-top: 130px;
+}
+
+.work-container p {
+    color: #757575;
+    margin-bottom: 50px;
+}
+
+/* skill section start here */
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 130px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2) ;
+    padding: 30px;
+    background-color: #fd6f0a0a;
+    border-radius: 20px;
+}
+
+.skill {
+    width: 140px;
+    background-color: white;
+    height: 377px;
+     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2) ;
+     overflow: hidden;
+     padding: 30px;
+     transition: all 0.3s ease;
+     border-radius: 20px;
+     
+}
+.skill:hover {
+    transform: scale(1.1)
+}
+
+.skill img,p,h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skill h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #181818;
+}
+.skill p {
+    font-weight: lighter;
+    color: #757575;
+    font-size: 16px;
+    line-height: 28px;
 }
 /* universal button style */
 .btn-primary {
